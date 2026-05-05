@@ -2,11 +2,11 @@
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": "",
+        "matcher": "Read|Grep",
         "hooks": [
           {
             "type": "command",
-            "command": "true"
+            "command": "node $PWD/hooks/read_hook.js"
           }
         ]
       },
